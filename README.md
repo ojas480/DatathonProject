@@ -1,5 +1,5 @@
-# Hackathon2023
-GaTech Hacklytics
+# Georgia Tech Datathon 2023
+
 
 Website Access
 
