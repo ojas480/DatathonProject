@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        title {
+            text-align: center;
+            font-size: 25px;
+        }
+        h1 {
+        color: #3f5863;
+        font-size: 36px;
+        margin-bottom: 40px;
+        }
+        body {
+            padding-top: 100px;
+            background-color: #c0d6df;
+            text-align: center;
+            font-size: 25px;
+            font: Garamond;
+        }
+        form {
+    background-color: #eaeaea;
+    padding: 40px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px #e8dab2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 275px; /* Reduce this value to make the form narrower */
+    margin: 0 auto;
+    width: 50%;
+    }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group label {
+            margin-bottom: 10px;
+        }
+        select,
+        input[type="submit"] {
+            width: 200px;
+            background-color: #eaeaea;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+    <title>Gym Routine</title>
+  <body>
+      <h1>The Gym Guru</h1>
+
+<form action="/gym_routine" method="POST" style="background-color: white; padding: 40px; border-radius: 10px; box-shadow: 2px 2px 10px lightgray; align-items: center; display: flex; flex-direction: column; text-align: center; justify-content: center">
+    <div class="form-group">
+        <label for="plan_type">*Schedule Type:</label>
+        <select name="plan_type">
+            <option value=None>[select]</option>
+            <option value="day">Day</option>
+            <option value="week">Week</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="days_per_week">*Days per Week:</label>
+        <select name="days_per_week">
+            <option value=None>[select]</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="body_part">Muscle Group Focus (only for one day option):</label>
+        <select name="body_part">
+            <option value=None>[select]</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Triceps">Triceps</option>
+            <option value="Chest">Chest</option>
+            <option value="Lats">Lats</option>
+            <option value="Lower Back">Lower Back</option>
+            <option value="Middle Back">Middle Back</option>
+            <option value="Traps">Traps</option>
+            <option value="Biceps">Biceps</option>
+            <option value="Forearms">Forearms</option>
+            <option value="Abdominals">Abdominals</option>
+            <option value="Adductors">Adductors</option>
+            <option value="Calves">Calves</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Hamstrings">Hamstrings</option>
+            <option value="Quadriceps">Quadriceps</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="level">*Difficulty Level:</label>
+        <select name="level">
+            <option value=None>[select]</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Advanced</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="plan_option">Plan Option: (only for week)</label>
+        <select name="plan_option">
+            <option value=None>[select]</option>
+            <option value="PPL">PPL</option>
+            <option value="Arnold Split">Arnold Split</option>
+        </select>
+    </div>
+<br>
+<div class="form-group" style="display: flex; justify-content: center;">
+    <input type="submit" value="Generate Plan" style="background-color: skyblue; border-radius: 5px; padding: 10px 20px; font-size: 20px; margin-top: 20px; cursor: pointer;">
+</div>
+</form>
+
+
+  </body>
+</html>

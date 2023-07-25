@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gym Routine</title>
+    <style>
+      body {
+        background-color: #c0d6df;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 80px 0;
+      }
+
+      h1 {
+        color: #3f5863;
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: #ab5330;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .return-back-container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .return-back-button {
+        background-color: #eaeaea;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .return-back-button:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="return-back-container">
+      <a href="http://ojas48.pythonanywhere.com" class="return-back-button">Return Back</a>
+    </div>
+    <h1>Workout Plan</h1>
+    {% for line in workout_plan.splitlines() %}
+      <p>{{ line }}</p>
+    {% endfor %}
+  </body>
+</html>
